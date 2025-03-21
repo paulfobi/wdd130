@@ -23,3 +23,134 @@ img {
 p {
     padding: 10px;
 }
+
+
+
+
+/* Define CSS variables for your color scheme and fonts */
+:root {
+  --primary-color: #F2D7EE;
+  --secondary-color: #D3BCC0;
+  --accent1-color: #A5668B;
+  --accent2-color: #69306D;
+  --heading-font: 'Merriweather', serif;
+  --text-font: 'Roboto', sans-serif;
+}
+
+/* Basic reset and page container */
+body {
+  font-family: var(--text-font);
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header .logo {
+  max-width: 150px;
+}
+
+/* Navigation links */
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--accent1-color);
+}
+
+/* Hero container styling */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero image fills the container */
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* h1 positioned over the hero image */
+.hero h1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-family: var(--heading-font);
+  font-size: 3em;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+/* Article inside hero (company purpose) */
+.hero article {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  max-width: 500px;
+}
+
+.hero article .client-img {
+  float: right;
+  max-width: 100px;
+  margin-left: 20px;
+}
+
+/* History section */
+.history {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  max-width: 500px;
+}
+
+/* Adventure section (rafting images) */
+.adventure {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
+.adventure img {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Social media icon links specific selector to remove underline */
+footer .social-media a {
+  margin: 0 10px;
+  text-decoration: none; /* Only remove underline from these links */
+}
+
+footer .social-media a img {
+  width: 30px;
+  height: auto;
+}
